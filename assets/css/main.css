@@ -6,12 +6,13 @@
 }
 
 body {
-    background-color: rgb(3, 3, 3);
+    background-color: rgb(10, 10, 10);
 }
+
 
 main section {
     width: 100%;
-    height: 900px;
+    height: 620px;
 }
 
 .container-slide {
@@ -22,8 +23,8 @@ main section {
 
 .slide {
     position: relative;
-    width: 100%;
-    height: 500px;
+    width: 85%;
+    height: 600px;
     overflow: hidden;
     background-color: black;
     margin:  0 auto;
@@ -62,6 +63,16 @@ main section {
     width: 100%;
     font-size: 1.1rem;
     margin: 0 auto;
+    overflow: hidden;
+}
+
+.titles button {
+    width: 15%;
+    background-color: transparent;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    border: none;
 }
 
 .btnL {
@@ -87,6 +98,88 @@ main section {
 }
 
 .btnR button {
+    font-size: 20px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.64);
+}
+
+.section-latest {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.article-upcoming {
+    margin:  0 auto;
+    width: 85%;
+}
+
+
+.article-upcoming h2 {
+    color: white;
+    text-align: left;
+    font-size:2.2rem;
+}
+
+.container-upcoming {
+    display: flex;
+    width: 100%;
+    margin:  10px auto;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.card-upcoming {
+    color: white;
+    margin: 5px;
+    scroll-snap-align: center;
+    cursor: pointer;
+}
+
+.card-upcoming:hover {
+    transform: scale(1.1);
+    transition: 200ms ease;
+}
+
+
+.card-upcoming img {
+    width: 100%;
+    min-width: 220px;
+    border-radius: 20px;
+}
+
+.card-upcoming h3 {
+    text-align: center;
+}
+
+
+.btnL-latest {
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+}
+
+.btnL-latest button {
+    font-size: 20px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.64);
+}
+
+.btnR-latest {
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+}
+
+.btnR-latest button {
     font-size: 20px;
     border: none;
     padding: 5px 10px;
